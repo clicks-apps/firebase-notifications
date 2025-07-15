@@ -20,6 +20,7 @@ export default async function handler(req, res) {
 
   const { topic, token, data } = req.body;
   if (!topic && !token) {
+    console.log("OK");
     return res.status(400).json({ error: 'Must provide topic or token' });
   }
 
