@@ -47,7 +47,7 @@ export default async function handler(req, res) {
     const result = await response.json();
     res.status(response.status).json(result);
   } catch (error) {
-    console.error('Error sending message:', error);
+    console.error('Error sending1 message:', error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 }
